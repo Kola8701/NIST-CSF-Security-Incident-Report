@@ -51,16 +51,17 @@ A security incident occcured where the organization’s internal network experie
 
 | Phase  | Description of what happened at each NIST CSF phase |
 | --- | --- |
-| Identify | The cybersecurity team investigated the security event and discovered. |
-| Protect | To protect and safeguard against future DDoS attacks, the network security team implemented  |
-| Detect | To detect new and similar unauthorized network intrusions and improve the ability to detect these threats, the security team will install network monitoring software to detect abnormal traffic patterns and Source IP address verification on the firewall to check for spoofed IP addresses on incoming ICMP packets. |
-| Respond | The incident management team responded by blocking incoming ICMP packets,  |
-| Recover | This attack took the network down for two hours and the IT and Security operation teams worked jointly to bring the network back online |
+| Identify | The cybersecurity team investigated the security event and discovered a malicious actor exploited a vulnerability in the company's firewall to launch a Distributed Denial of Service (DDoS) attack. This attack involved sending a large number of Internet Control Message Protocol (ICMP) Ping requests to the network, overwhelming it and disrupting normal operations. The firewall was misconfigured, allowing the attacker to flood the network with traffic.   |
+| Protect | The Cybersecurity team implemented two measures to prevent future DDoS attacks. Firewall rule: A new rule was added to the firewall to restrict the rate of incoming ICMP packets and. IDS/IPS system: An intrusion detection and prevention system was deployed to filter out suspicious ICMP traffic to the internal network. This system can identify and block malicious traffic based on its characteristics.  |
+| Detect | Implement network monitoring software: This software will monitor network traffic for unusual patterns that may indicate a malicious activity or attack. Source IP address verification to configure the firewall will be configured to verify the source IP addresses of incoming ICMP packets. This will help identify spoofed IP addresses, which attackers often use to disguise their identity  |
+| Respond | The incident management team took swift action to contain the DDoS attack by blocking incoming ICMP packets. This stopped the flood of traffic overwhelming the network. Shutting down non-critical services. This freed up resources to focus on critical operations. Security personnel will receive training on the new tools implemented, such as network monitoring software and source IP verification on the firewall. This ensures they can effectively utilize these resources. The incident response playbook will be updated to reflect the learnings from this event. Specifically, the "Detect" and "Protect" phases will be strengthened to address vulnerabilities related to ICMP traffic and firewall configuration.   |
+| Recover | The DDoS attack resulted in a two-hour network outage, disrupting normal business operations. The IT and Security operations teams collaborated to restore network functionality and minimize downtime. The cybersecurity team shared information with staff and conducted a lessons learned session to: Analyze the root cause of the attack. Identify necessary safeguards to prevent future incidents. 
+ |
 
 
 # Notes <a name="notes"> 
 
-This was a challenging exercise that I did really well initially. T.
+This was a challenging exercise that I did really well. 
 
 [The Understanding and Responding to Distributed Denial-of-Service Attacks whitepaper published by the CISA.](https://www.cisa.gov/sites/default/files/publications/understanding-and-responding-to-ddos-attacks_508c.pdf)
 
@@ -69,4 +70,4 @@ NIST article on suggestions for the properly recovering from a cyberattack
 [How to Recover from a Cyber Attack | NIST](https://www.nist.gov/blogs/manufacturing-innovation-blog/how-recover-cyber-attack#:~:text=Consider%20Cyber%20Insurance%20for%20Increased%20Recovery%20Capability%20Like,assist%20in%20identifying%20the%20extent%20of%20damage%20caused)
 
 # Reflections <a name="reflections"> 
-This was a challenging exercise that I did really well initially. The part I struggled with was including too much and more detail 
+This was a challenging exercise that I did really well . The part I struggled with was including too much and more detail 
